@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.landing_div{
+    width: 100vw;
+    background-color: #000;
+    color: #fff;
+}
+.homediv{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+}
+.homediv .main_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.homediv .main_div .left_div{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.left_div h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6.4rem;
+    line-height: 7.6rem;
+}
+.left_div h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 9.6rem;
+    line-height: 9.6rem;
+}
+.left_div p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+.emailDiv{
+    display: flex;
+    width: 100%;
+}
+.email_btn{
+    width: 70%;
+}
+.email_btn .input_btn{
+    width: 95%;
+    height: 7.2rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #000;
+    font-size: 2.4rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    padding: 0 1rem 0 2rem;
+}
+.email_btn ::placeholder{
+    color: #fff;
+    font-size: 2.4rem;
+    
+}
+.submit_btn{
+    width: 25%;
+}
+.submit_btn .save_btn{
+    height: 7.2rem;
+    background: #D9D9D9;
+    border-radius: 8px;
+    width: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #000000;
+    border: none;
+}
+.homediv .right_div{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.first_img{
+    position: absolute;
+}
+.second_img{
+    position: absolute;
+}
+.right_div .image1{
+    width: 70%;
+    height: 70%;
+    margin-left: 35%;
+    margin-top: -15%;
+    background: #D9D9D9;
+    border: 5px solid #FFFFFF;
+    box-shadow: 4px 4px 33px rgba(0, 0, 0, 0.33);
+}
+.right_div .image2{
+    width: 70%;
+    height: 70%;
+    margin-top: -50%;
+    background: #D9D9D9;
+    border: 5px solid #FFFFFF;
+    box-shadow: 4px 4px 33px rgba(0, 0, 0, 0.33);
+}
+
+/* Description Section*********************** */
+
+ .landing_div .description_section{
+    width: 100%;
+    margin-top: 15rem;
+}
+.description_section .first_div{
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.description_section .third_div{
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10rem;
+}
+.description_section .second_div{
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10rem 0 0 auto;
+}
+.description_section .image_side{
+    width: 50%;
+}
+.image_side .image_1{
+    width: 90%;
+}
+.image_side .image_2{
+    width: 100%;
+}
+.description_section .para_side{
+    width: 50%;
+}
+.description_section .para_side h3{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 900;
+font-size: 6.4rem;
+color: #FFFFFF;
+}
+.description_section .para_side p{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 900;
+font-size: 2.4rem;
+color: #FFFFFF;
+}
+
+/* Horizental section ******************** */
+.horizental_section{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 15rem;
+}
+.horizental_section .line{
+    border-style: dashed;
+  border-color: #fff;
+  border-width: 0.15rem;
+
+}
