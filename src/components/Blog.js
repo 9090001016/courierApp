@@ -1,50 +1,49 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import "../css/slider.css";
 import banner1 from "../image/banner1.png";
 import banner2 from "../image/banner2.png";
 import banner3 from "../image/banner3.png";
+import img1 from "../image/image 1.png";
+import img2 from "../image/image 2.png";
 
-const photos = [
-banner1,banner2,banner3
-];
+const photos = [banner3, banner2, img1, banner1, img2];
 
-const PhotoSlider = () => {
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+const Blog = () => {
+  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
-  const handleSlideChange = (index) => {
-    setActiveSlideIndex(index);
-  };
-
-  const handlePrevSlide = () => {
-    setActiveSlideIndex((prevIndex) => (prevIndex === 0 ? photos.length - 1 : prevIndex - 1));
-  };
-
-  const handleNextSlide = () => {
-    setActiveSlideIndex((prevIndex) => (prevIndex === photos.length - 1 ? 0 : prevIndex + 1));
+  const handleDotClick = (index) => {
+    setCurrentPhotoIndex(index);
   };
 
   return (
     <div className="photo-slider">
-      <div className="slides">
-        {photos.map((photo, index) => (
-          <div key={index} className={index === activeSlideIndex ? "active" : "inactive"}>
-            <img src={photo} alt={`Slide ${index}`} />
+      {photos.map((pic, index) => {
+        return (
+          <div className="white_border">
+            <img
+              key={index}
+              src={pic}
+              alt="Current_photo"
+              className={
+                currentPhotoIndex === index ? "activePhoto" : "not_active"
+              }
+            />
+            <p>We understand the importance of timely and safe delivery,which is why we have a strict screening.</p>
           </div>
-        ))}
-      </div>
-      <div className="controls">
-        <button onClick={handlePrevSlide}>Prev</button>
-        <button onClick={handleNextSlide}>Next</button>
-      </div>
-      <div className="nav-buttons">
-        {photos.map((photo, index) => (
-          <NavLink key={index} to={`/${index}`} onClick={() => handleSlideChange(index)} activeClassName="active">
-            <img src={photo} alt={`Slide ${index}`} />
-          </NavLink>
+        );
+      })}
+
+      <div className="dots">
+        {photos.map((_, index) => (
+          <button
+            key={index}
+            className={index === currentPhotoIndex ? "active" : ""}
+            onClick={() => handleDotClick(index)}
+          />
         ))}
       </div>
     </div>
   );
 };
 
-export default PhotoSlider;
+export default Blog;

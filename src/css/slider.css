@@ -1,0 +1,102 @@
+.photo-slider {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .photo-slider .white_border {
+    display: flex;
+    flex-direction: column;
+    background: #000000;
+    opacity: 0.85;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(167, 167, 167, 0.44);
+    border-radius: 0px 0px 55px 0px;
+    margin: 1rem;
+  }
+  .photo-slider .white_border:nth-child(1){
+    width: 18rem;
+    height: 28rem;
+  }
+  .photo-slider .white_border:nth-child(2){
+    width: 20rem;
+    height: 30rem;
+  }
+  .photo-slider .white_border:nth-child(3){
+    width: 22rem;
+    height: 33rem;
+  }
+  .photo-slider .white_border:nth-child(4){
+    width: 20rem;
+    height: 30rem;
+  }
+  .photo-slider .white_border:nth-child(5){
+    width: 18rem;
+    height: 28rem;
+  }
+  .photo-slider .white_border img{
+    margin: 0.5rem;
+    height: 50%;
+  }
+  .white_border p{
+    color: #fff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 122%;
+    text-align: center;
+  }
+  .photo-slider .white_border:nth-child(1) p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+  .photo-slider .white_border:nth-child(2) p{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+  .photo-slider .white_border:nth-child(3) p{
+    font-size: 2.1rem;
+    margin-top: 1rem;
+  }
+  .photo-slider .white_border:nth-child(4) p{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+  .photo-slider .white_border:nth-child(5) p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+ 
+  
+  .dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .dots button {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    border: none;
+    margin: 0 0.5rem;
+    background-color: #383838;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dots button.active {
+    background-color: #fff;
+  }
+  
+  .photo-slider .activePhoto{
+    background-color: #000;
+  }
+  
+  
